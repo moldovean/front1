@@ -1,0 +1,11 @@
+<div *ngIf="product">
+  <p>Produc Details for {{product.name}}</p>
+  <p>Product id: {{getProdId()}}</p>
+  <p>Prod Description: {{product.description}}</p>
+  <p>Price: {{product.price}}</p>
+  <button (click)="buyPhone()">Buy</button>
+  <div>
+    <a [routerLink]="'/comp1'">Get Back</a>
+  </div>
+
+</div>
