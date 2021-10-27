@@ -1,9 +1,9 @@
 <h3>Component 1: Products Example</h3>
 <p>Products is just a list. You define the Product interface, which acts as an object in Angular.</p>
 <div *ngFor="let prod of products">
-  <h4>{{prod.name}}</h4>
+
   <p>{{prod.id}}</p>
   <a [routerLink]="['/products', prod.id]">
-    {{prod.name}}</a>
+    <h4>{{prod.name}}</h4></a>
 
 </div>
